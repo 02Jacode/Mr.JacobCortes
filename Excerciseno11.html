@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function agefunction()
+    {
+         var age=document.getElementById("ages").value;
+    
+        if(age >= 0 && age <= 12){
+            document.getElementById("answer").innerHTML="You are a Child";
+        }
+        else if(age >= 13 && age <= 19){
+            document.getElementById("answer").innerHTML="You are a Teenager";
+        }
+        else if(age >=20 && age <=59){
+            document.getElementById("answer").innerHTML="You are a Adult";
+        }
+        else if(age >=60 && age <=200){
+            document.getElementById("answer").innerHTML="You are a Senior Citizen";
+        }
+        else if(age >= 200){
+            document.getElementById("answer").innerHTML="Legend!! You are Ancient!";
+        }
+        else{
+            document.write("Wrong Input")
+        }
+    }
+    </script>   
+    </head>
+    <body>
+        <h1>Age Analyzer</h1>
+        <form>
+            <Label>Enter Your Age: </Label><input type="number" id="ages"><br>
+            <input type="button" onclick="agefunction()" value="submit">
+            <br><br>
+            <h3 id="answer"></h3>
+        </form>
+        <br><br><br><a href="index.html">Back </a><br>
+
+    </body>
+    </html>

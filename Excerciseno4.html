@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Consonant or Vowels?</h1>
+    <h2>Enter Alphabet Character:</h2>
+    <form>
+        <input type="text" id="letter">
+        <input type="button" value="submit" onclick="alphabetcheck()">
+    <h3><p id="result"></p></h3>
+    </form>
+    <br><br><a href="index.html">Back </a><br>
+
+</body>
+<script type="text/javascript">
+  function alphabetcheck(){
+    var convar = document.getElementById("letter").value;
+
+    if(convar == "A" || convar == "a" || convar == "E" || convar == "e" || convar == "I" || convar == "i" || convar == "O" 
+    || convar == "o" || convar == "u" || convar == "U"){
+        document.getElementById("result").innerHTML = "Vowels";
+    }
+    else if(convar == "B" || convar == "C" || convar == "D" || convar == "F" || convar == "G" || convar == "H" || convar == "J" || convar == "K"
+    || convar == "L"|| convar == "M"|| convar == "N"|| convar == "P"|| convar == "Q"|| convar == "R"|| convar == "S"|| convar == "T" || convar == "V" 
+    || convar == "W"|| convar == "X" || convar == "Z"){
+      document.getElementById("result").innerHTML = "Consonant";
+    }
+    else if(convar == "b" || convar == "c" || convar == "d" || convar == "f" || convar == "g" || convar == "h" || convar == "i" || convar == "k"
+    || convar == "l"|| convar == "m"|| convar == "n"|| convar == "p"|| convar == "q"|| convar == "r"|| convar == "s"|| convar == "t" || convar == "v" 
+    || convar == "w"|| convar == "x" || convar == "z"){
+      document.getElementById("result").innerHTML = "Consonant";
+    }
+    else{
+      document.write("Invalid");
+    }
+  }
+ </script> 
+
+</html>

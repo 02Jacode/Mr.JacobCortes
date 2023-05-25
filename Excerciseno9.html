@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<script type="text/javascript">
+    function takecube(){
+        var kyub;
+        kyub = document.getElementById("kyub").value;
+        document.getElementById("result").innerHTML = kyub * kyub * kyub;
+    }
+    
+    </script>
+    <body>
+        <h1>Get the Cube</h1>
+    <form>
+    <h3>Enter Number : <input type="number" id="kyub">
+    
+    <input type="button" onclick = "takecube()" value="submit"><br></h3>
+    
+    The Cube is: <h2><p id = "result"></p> </h2>
+    </form>
+    <br><br><br><a href="index.html">Back </a><br>
+
+    </body>
+</html>

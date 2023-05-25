@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<script type="text/javascript">
+    function Mul(){
+        Fnum = document.getElementById("FRno").value;
+        Scum = document.getElementById("SNDno").value;
+        document.getElementById("result").innerHTML = Fnum * Scum;
+    }
+    function add(){
+        Fnum = parseFloat(document.getElementById("FRno").value);
+        Scum = parseFloat(document.getElementById("SNDno").value);
+        document.getElementById("result").innerHTML = Fnum + Scum;
+    }
+    function Div(){
+        Fnum = document.getElementById("FRno").value;
+        Scum = document.getElementById("SNDno").value;
+        document.getElementById("result").innerHTML = Fnum / Scum;
+    }
+    function Sub(){
+        Fnum = document.getElementById("FRno").value;
+        Scum = document.getElementById("SNDno").value;
+        document.getElementById("result").innerHTML = Fnum - Scum;
+    }
+    function mod(){
+        Fnum = document.getElementById("FRno").value;
+        Scum = document.getElementById("SNDno").value;
+        document.getElementById("result").innerHTML = Fnum % Scum;
+    }  
+    </script>
+    <body>
+        <h1>Calculate two numbers</h1>
+    <form>
+    <h3>Enter First Number : <input type="text" id="FRno">
+    <h3>Enter Second Number : <input type="text" id="SNDno"><br></br>
+    <input type="button" onClick ="Mul()" value="Multiply" />
+    <input type="button" onClick ="add()" value="Addition" />
+    <input type="button" onClick ="Div()" value="Division" />
+    <input type="button" onClick ="Sub()" value="Subtraction" />
+    <input type="button" onClick ="mod()" value="Modulo" /><br>
+</form> 
+    The Result is: <h2><p id = "result"></p> </h2>
+    <br><br><br><a href="index.html">Back </a><br>
+
+    </body>
+</html>

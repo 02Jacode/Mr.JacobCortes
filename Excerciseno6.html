@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Grading Scale</h1>
+    <form>
+        <h2>Inter Grade: </h2>
+        <label><input type="number" id="grade"></label> 
+        <input type="button" onclick ="scale()" value="Submit"><br>
+
+        <h3>You are  <span id="result"></span></h3>
+    </form>
+    <br><br><a href="index.html">Back </a><br>
+
+</body>
+<script type="text/javascript">
+    function scale(){
+        var theG = document.getElementById("grade").value;
+        if(theG >=96 && theG <= 100 ){
+            document.getElementById("result").innerHTML ="Excellent!";
+        }
+        else if(theG >=90 && theG <= 95 ){
+            document.getElementById("result").innerHTML ="Very Satisfactory!";
+        }
+        else if(theG >=84 && theG <= 89 ){
+            document.getElementById("result").innerHTML ="Satisfactory";
+        }
+        else if(theG >=78 && theG <= 83 ){
+            document.getElementById("result").innerHTML ="Fairly Satisfactory";
+        }
+        else if(theG >=75 && theG <= 77 ){
+            document.getElementById("result").innerHTML ="Passed";
+        }
+        else if(theG >=70 && theG <= 74 ){
+            document.getElementById("result").innerHTML ="Conditional Failure";
+        }
+        else if(theG <= 69 ){
+            document.getElementById("result").innerHTML ="Failed";
+        }
+        
+        else{
+            document.write("Invalid");
+        }
+    }  
+ </script> 
+
+</html>

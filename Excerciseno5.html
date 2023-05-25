@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Age Validation to vote</h1>
+    <form>
+        <h2>Enter Your Age: </h2>
+        <label><input type="number" id="age"></label> 
+        <input type="button" onclick ="vote()" value="Submit"><br>
+
+        <h3>You are  <span id="result"></span></h3>
+    </form>
+    <br><br><a href="index.html">Back </a><br>
+
+</body>
+<script type="text/javascript">
+    function vote(){
+        var agvote = document.getElementById("age").value;
+        if(agvote <= 17){
+            document.getElementById("result").innerHTML ="Not qualified to vote";
+        }
+        else if(agvote => 18){
+            document.getElementById("result").innerHTML = "Qualified to vote";
+        }
+        else{
+            document.write("Invalid");
+        }
+    }  
+ </script> 
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Largeno()
+    {
+         var num1=parseFloat(document.getElementById("no1").value);
+         var num2=parseFloat(document.getElementById("no2").value);
+         var num3=parseFloat(document.getElementById("no3").value);
+    
+        if(num1 <= num2 && num1 <= num3){
+            document.getElementById("answer").innerHTML="Number 1 is the Smallest number";
+        }
+        else if(num2 <= num1 && num2 <= num3){
+            document.getElementById("answer").innerHTML="Number 2 is the Smallest number";
+        }
+        else if(num3 <= num1 && num3 <= num2){
+            document.getElementById("answer").innerHTML="Number 3 is the Smallest number";
+        }else{
+            document.getElementById("answer").innerHTML="Invalid";
+        }
+    }
+    </script>   
+    </head>
+    <body>
+        <h1>Smallest Number Among the Three</h1>
+        <form>
+            <Label>Number 1: </Label><input type="number" id="no1"><br>
+            <Label>Number 2: </Label><input type="number" id="no2"><br>
+            <Label>Number 3: </Label><input type="number" id="no3"><br>
+
+            <input type="button" onclick="Largeno()" value="submit">
+            <br><br>
+            <h3 id="answer"></h3>
+        </form>
+        <br><br><br><a href="index.html">Back </a><br>
+
+    </body>
+    </html>

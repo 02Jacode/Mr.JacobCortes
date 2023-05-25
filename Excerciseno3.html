@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Week Number</h1>
+    <form>
+        <h2>Input number(1-7): </h2>
+        <label><input type="number" id="nom"></label> 
+        <input type="button" onclick ="week()" value="Submit"><br>
+
+    <h3>Today is  <span id="result"></span></h3>
+    </form>
+    <br><br><a href="index.html">Back </a><br>
+
+</body>
+<script type="text/javascript">
+    function week(){
+        var day = document.getElementById("nom").value;
+        if(day == 1){
+            document.getElementById("result").innerHTML = "Sunday";
+        }
+        else if(day == 2){
+            document.getElementById("result").innerHTML = "Monday";
+        }
+        else if(day == 3){
+            document.getElementById("result").innerHTML = "Tuesday";
+        }
+        else if(day == 4){
+            document.getElementById("result").innerHTML = "Wednesday";
+        } 
+        else if(day == 5){
+            document.getElementById("result").innerHTML = "Thursday";
+        }
+        else if(day == 6){
+            document.getElementById("result").innerHTML = "Friday";
+        }
+        else if(day == 7){
+            document.getElementById("result").innerHTML = "Saturday";
+        }
+        else{
+            document.write("Invalid");
+        }
+    }  
+ </script> 
+
+</html>

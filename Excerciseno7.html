@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Positive, Negative, Even or Odd?</h1>
+    <form>
+        <label>
+            <input type="text" id="PoNeg">
+        </label>
+        <input type="button" onclick="Guestit()" value="submit">
+    </form>
+    <h2><p id="result"></p></h2>
+    <br><br><br><a href="index.html">Back </a><br>
+
+</body>
+<script type="text/javascript">
+  function Guestit(){
+    var ans = document.getElementById("PoNeg").value;
+
+    if(ans == 0){
+        document.getElementById("result").innerHTML = "Zero";
+
+    }
+    else if(ans %2 == 0){
+       if(ans > 0){
+        document.getElementById("result").innerHTML = "The Number is Even and Positive";
+       }
+       else{
+        document.getElementById("result").innerHTML = "The Number is Even and Negative";
+       }
+    }else{
+        if(ans>0){
+            document.getElementById("result").innerHTML = "The Number is Odd and Positive";
+        }
+        else{
+            document.getElementById("result").innerHTML = "The Number is Odd and Negative";
+        }
+    }
+  }
+ </script> 
+
+</html>
